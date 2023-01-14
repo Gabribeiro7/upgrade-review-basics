@@ -63,8 +63,42 @@ let count = 0;
 let sum = 0;
 for (const user of users) {
     for (const key in user.favoritesSounds) {
-        sum += + user.favoritesSounds[key].volume; 
+        sum += user.favoritesSounds[key].volume; 
         count ++;
     }
 }
 console.log(sum / count);
+
+
+//? **Iteración #3: Mix Fors**
+
+//? Dado el siguiente javascript usa forof y forin para saber cuantas veces ha sido cada sonido
+//?agregado por los usuarios a favorito. Para ello recorre la lista de usuarios y usa forin para 
+//? recoger el nombre de los sonidos que el usuario tenga como favoritos.
+//? Una vez accedas a ellos piensa en la mejor forma de hacer un conteo de cada vez que ese sonido 
+//?se repita como favorito en cada usuario.
+//?(lo que pide el ejercicio es que contemos cuantas veces se repite un sonido favorito, por ejemplo,
+ //?  waves lo han agregado 3 usuarios, por lo tanto queremos que el código nos diga que waves se repite 3 veces) 
+
+//?Este ejercicio es un poco complicado con los conocimientos actuales pero...a la vez un buen reto y
+//?oportunidad para comprender que hay muchas formas de hacer las cosas en javascript.
+
+//! Not capable of doing this exercise yet...
+
+//? **teración #4: Métodos findArrayIndex**
+
+//?Crea una función llamada `findArrayIndex` que reciba como parametros un array de textos y un texto y 
+//?devuelve la posición del array cuando el valor del array sea igual al valor del texto que enviaste como 
+//?parametro. Haz varios ejemplos y compruebalos.
+const ejp = ['Caracol', 'Mosquito', 'Salamandra', 'Ajolote'];
+
+function findArrayIndex(array, text) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === text){
+            return array.indexOf(text);
+            
+        }
+        
+    }
+}
+console.log(findArrayIndex(ejp, "Salamandra"));
