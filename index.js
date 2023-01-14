@@ -117,3 +117,19 @@ function rollDice(num) {
     return Math.floor(Math.random() * (num)+1)
 }
 console.log(rollDice(6));
+
+//? **Iteración #6: Función swap**
+
+//? Crea una función llamada `swap()` que reciba un array y dos parametros que sean indices del array. 
+//? La función deberá intercambiar la posición de los valores de los indices que hayamos enviado como 
+//? parametro. Retorna el array resultante.
+const arrayI6 = ['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño'];
+
+function swap(array, num1, num2 ) {
+    let change = array [num1];
+    array[num1] = array[num2];
+    array[num2] = change;
+
+    return array
+}
+console.log(swap(arrayI6, 0, 2));
